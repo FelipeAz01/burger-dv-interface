@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 import Logo from '../../assets/logo.svg';
-import { Button } from '../../components/Button/Index';
+import { Button } from '../../components';
 import {
   Container,
   Form,

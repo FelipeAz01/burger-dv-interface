@@ -781,6 +781,18 @@
     "@sigstore/core" "^2.0.0"
     "@sigstore/protobuf-specs" "^0.3.2"
 
+"@stripe/react-stripe-js@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-3.1.1.tgz#78a2575683637f87c965a81cc1e0f626138f20f1"
+  integrity sha512-+JzYFgUivVD7koqYV7LmLlt9edDMAwKH7XhZAHFQMo7NeRC+6D2JmQGzp9tygWerzwttwFLlExGp4rAOvD6l9g==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-5.6.0.tgz#cbb5b5f6110f870ca7de7e8ea3d189e9525a1019"
+  integrity sha512-w8CEY73X/7tw2KKlL3iOk679V9bWseE4GzNz3zlaYxcTjmcmWOathRb0emgo/QQ3eoNzmq68+2Y2gxluAv3xGw==
+
 "@tufjs/canonical-json@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tufjs/canonical-json/-/canonical-json-2.0.0.tgz#a52f61a3d7374833fca945b2549bc30a2dd40d0a"
@@ -3116,7 +3128,7 @@ promzard@^2.0.0:
   dependencies:
     read "^4.0.0"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
