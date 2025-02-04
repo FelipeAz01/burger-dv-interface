@@ -9,3 +9,6 @@ export * from './OffersCarousel'
 export * from './Table'
 export * from './CartResume'
 export * from './CartItems'
+export * from './Stripe/CheckoutForm'
+export * from './SideNavAdmin'
+

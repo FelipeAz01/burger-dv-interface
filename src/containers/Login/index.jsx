@@ -63,10 +63,14 @@ export function Login() {
         putUserData(userData);
 
         setTimeout(() => {
-          navigate('/');
-        }, 1000);
+          if (userData?.admin) {
+            navigate('/admin/pedidos');
+          } else {
+            navigate('/');
+          }
+        }, 2000);
       } else {
-        throw new Error(); // Força o catch caso o status seja inesperado
+        throw new Error();
       }
     } catch (error) {
       toast.error('😭 Falha no sistema! Tente novamente.');
