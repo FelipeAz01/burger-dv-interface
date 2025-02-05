@@ -1,13 +1,12 @@
+import { PiDropSimple } from "react-icons/pi";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
 
 export const Container = styled.div`
   display: grid;
   grid-template-columns: minmax(220px, 280px) 1fr;
 
   main {
-    display: flex;
+    display:flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
@@ -22,6 +21,4 @@ export const Container = styled.div`
     max-width: 1200px;
     width: 100%;
   }
-`;
-
-
+`

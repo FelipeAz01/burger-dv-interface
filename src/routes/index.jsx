@@ -1,20 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
-import { UserLayout } from '../layouts/UserLayout';
-
 import {
   Cart,
-  Home,
-  Menu,
-  Login,
-  Register,
-  CompletePayment,
   Checkout,
+  CompletePayment,
+  Home,
+  Login,
+  Menu,
+  Register,
   Orders,
   NewProduct,
   EditProduct,
   Products,
 } from '../containers';
 import { AdminLayout } from '../layouts/AdminLayout';
+import { UserLayout } from '../layouts/UserLayout';
 
 export function Router() {
   return (
