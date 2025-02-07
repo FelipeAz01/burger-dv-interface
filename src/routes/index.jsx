@@ -34,7 +34,7 @@ export function Router() {
       </Route>
 
       <Route path="/login" element={<Login />} />
-      <Route path="/cardapio" element={<Register />} />
+      <Route path="/cadastro" element={<Register />} />
     </Routes>
   );
 }

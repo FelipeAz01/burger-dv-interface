@@ -11,7 +11,7 @@ export function SideNavAdmin() {
 
   return (
     <Container>
-      <img src={Logo} alt="hamburguer Dv" />
+      <img src={Logo} alt="hamburger Dv" />
       <NavLinkContainer>
         {navLinks.map((link) => (
           <NavLink

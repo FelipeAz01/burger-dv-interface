@@ -7,15 +7,15 @@ export const Banner = styled.div`
   background-size: cover;
   background-position: center;
 
-  height: 480px;
+  height: 400px;
 
   h1 {
     font-family: 'Road Rage', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     color: #f4f4f4;
     position: absolute;
-    right: 20%;
-    top: 10%;
+    right: 15%;
+    top: 15%;
   }
 `
 

@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Container, Title, ContainersItems, CategoryButton } from './styles';
 import { useNavigate } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa'; // Biblioteca de ícones
+import { FaArrowLeft } from 'react-icons/fa';
 
 export function CategoriesCarousel() {
   const [categories, setCategories] = useState([]);
@@ -33,27 +33,26 @@ export function CategoriesCarousel() {
     <Container>
       <Title>CATEGORIAS</Title>
 
-      <Carousel
-        responsive={responsive}
-        infinite={true}
-        partialVisbile={false}
-        itemClass="carousel-item"
-      >
-        {categories.map((category) => (
-          <ContainersItems key={category.id} ImageUrl={category.url}>
-            <CategoryButton
-              onClick={() => {
-                navigate({
-                  pathname: '/cardapio',
-                  search: `?categoria=${category.id}`,
-                });
-              }}
-            >
-              {category.name}
-            </CategoryButton>
-          </ContainersItems>
-        ))}
-      </Carousel>
+      {categories.length === 0 ? (
+        <p>Carregando categorias...</p>
+      ) : (
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          partialVisible={false}
+          itemClass="carousel-item"
+        >
+          {categories.map((category) => (
+            <ContainersItems key={category.id} ImageUrl={category.url}>
+              <CategoryButton
+                onClick={() => navigate(`/cardapio?categoria=${category.id}`)}
+              >
+                {category.name}
+              </CategoryButton>
+            </ContainersItems>
+          ))}
+        </Carousel>
+      )}
     </Container>
   );
 }
