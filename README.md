@@ -50,3 +50,13 @@ O front-end consome a API desenvolvida no **DevBurger Backend**, garantindo uma 
 ⭐ Criar uma **área de avaliações** para clientes deixarem feedbacks.  
 
 </div>
+
+
+
+
+## VEJA TAMBEM O BACK END
+ <div align="center"> 
+<a href="https://github.com/FelipeAz01/Burger-dv-backend">
+  <img   width="120px" src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg"  /> 
+</a>
+</div>
